@@ -1,3 +1,6 @@
+@import "./import-practice";
+
+
 $h1FontSize: 35px; 
 
 $paddingForInputs: 10px; 
@@ -21,12 +24,14 @@ $paddingForInputs: 10px;
 }
 
 body { 
-    background-color: skyblue;
+     // background-color: $bodyColor;
+    background-color: $secondBodyColor;
 }
 
 #form { 
     width: 500px; 
-    background-color: white;
+    background-color: $formBackGroundColor;
+   //  background-color: white;
     margin: 20vh auto 0 auto; 
     padding: 25px; 
     border-radius: 4px;
@@ -70,12 +75,3 @@ body {
 
 } 
 
-// @mixin buttonStyles { 
-//     padding: 10px; 
-//     margin-top: 10px; 
-//     width: 100%;
-//     color: white; 
-//     background-color: blue;
-//     border: none; 
-//     border-radius: 4px;
-// }
