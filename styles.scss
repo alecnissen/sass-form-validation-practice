@@ -1,9 +1,20 @@
 @import "./import-practice";
 
 
-$h1FontSize: 35px; 
+$h1FontSize: 35px;
 
-$paddingForInputs: 10px; 
+$paddingForInputs: 10px;
+
+$fontSize: 36px; 
+
+@function double($fontSize) { 
+    @return $fontSize * 2
+} 
+
+#yo-styles { 
+    color: purple; 
+    font-size: double($fontSize);
+}
 
 @mixin buttonStyles { 
     padding: 10px; 
